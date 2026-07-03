@@ -283,6 +283,7 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     display: grid; grid-template-columns: repeat(2, 1fr);
     gap: 10px; margin-bottom: 18px;
 }
+.org-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .org-slot {
     border: 2px dashed #e2e8f0; border-radius: 8px;
     padding: 14px 10px; height: 76px;
