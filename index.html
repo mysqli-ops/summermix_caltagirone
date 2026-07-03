@@ -24,7 +24,7 @@
 
     <header>
         <p class="header-eyebrow">AGESCI Caltagirone 1 · Clan Lux Viae</p>
-        <img src="logo.png" alt="Summer Mix" class="logo-img" width="600" height="153">
+        <img src="assets/logo.png" alt="Summer Mix" class="logo-img" width="600" height="153">
         <p class="header-sub">Seconda Edizione</p>
         <div class="info-box">
             <div class="info-item"><strong>📅</strong> Domenica 27 luglio 2026</div>
@@ -70,6 +70,7 @@
             <div class="tl-content">
                 <span class="badge-live" aria-label="Performance dal vivo">LIVE</span>
                 <strong>KaltaStreetEagles</strong> — Esibizione
+                <img src="assets/kse.webp" alt="KaltaStreetEagles" class="tl-logo">
             </div>
         </div>
 
@@ -132,13 +133,15 @@
     <footer>
         <h3>Organizzatori</h3>
         <div class="org-grid">
-            <!-- Summer Mix logo già disponibile -->
             <div class="org-slot">
-                <img src="logo.png" alt="Summer Mix">
+                <img src="assets/logo.png" alt="Summer Mix">
             </div>
-            <!-- TODO: sostituire i 3 placeholder con loghi reali -->
+            <div class="org-slot">
+                <img src="assets/agesci.webp" alt="AGESCI Caltagirone 1">
+            </div>
+            <!-- TODO: aggiungere logo Clan Lux Viae quando disponibile -->
             <div class="org-slot">Clan Lux Viae<br>Logo</div>
-            <div class="org-slot">AGESCI<br>Caltagirone 1<br>Logo</div>
+            <!-- TODO: aggiungere logo Parrocchia S. G. Bosco quando disponibile -->
             <div class="org-slot">Parrocchia S. G. Bosco<br>Logo</div>
         </div>
         <p class="contact-line">
@@ -164,14 +167,16 @@
               onkeydown="if(event.key==='Enter'||event.key===' '){closeSponsorModal();}">&times;</span>
         <h2 id="sponsorTitle">I Nostri Sponsor</h2>
         <div class="sponsor-grid">
-            <div class="sponsor-slot">Sponsor 1</div>
-            <div class="sponsor-slot">Sponsor 2</div>
-            <div class="sponsor-slot">Sponsor 3</div>
-            <div class="sponsor-slot">Sponsor 4</div>
-            <div class="sponsor-slot">Sponsor 5</div>
-            <div class="sponsor-slot">Sponsor 6</div>
-            <div class="sponsor-slot">Sponsor 7</div>
-            <div class="sponsor-slot">Sponsor 8</div>
+            <div class="sponsor-slot"><img src="assets/carista.webp" alt="Carista"></div>
+            <div class="sponsor-slot"><img src="assets/cultrona.webp" alt="Cultrona"></div>
+            <div class="sponsor-slot"><img src="assets/navanzino.webp" alt="Navanzino"></div>
+            <div class="sponsor-slot"><img src="assets/edicola-falcone-borsellino.webp" alt="Edicola Falcone Borsellino"></div>
+            <div class="sponsor-slot"><img src="assets/fisica-viaggi.webp" alt="Fisica Viaggi"></div>
+            <div class="sponsor-slot"><img src="assets/virtualars.webp" alt="VirtualArs"></div>
+            <!-- Calcagno-Maria-Banner.webp potrebbe essere landscape — verifica che si adatti alla griglia -->
+            <div class="sponsor-slot"><img src="assets/Calcagno-Maria-Banner.webp" alt="Calcagno Maria"></div>
+            <!-- fralogo.webp — sponsor o organizzatore? Spostare in org-grid se è un organizzatore -->
+            <div class="sponsor-slot"><img src="assets/fralogo.webp" alt="Fra"></div>
         </div>
     </div>
 </div>
