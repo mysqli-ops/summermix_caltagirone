@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Mix 2026 – Seconda Edizione</title>
+    <meta name="description" content="Summer Mix seconda edizione – sport, giochi, jam session, DJ set e cibo. 27 luglio ore 16:30, Parrocchia San Giovanni Bosco, Caltagirone.">
+    <meta property="og:title" content="Summer Mix 2026 – Seconda Edizione">
+    <meta property="og:description" content="Sport, giochi da tavolo, DJ set e cibo. 27 luglio a Caltagirone – Clan Lux Viae AGESCI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="TODO_URL_POSTER">
+    <meta property="og:locale" content="it_IT">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<div class="container">
+
+    <header>
+        <p class="header-eyebrow">AGESCI Caltagirone 1 · Clan Lux Viae</p>
+        <img src="logo.png" alt="Summer Mix" class="logo-img" width="600" height="153">
+        <p class="header-sub">Seconda Edizione</p>
+        <div class="info-box">
+            <div class="info-item"><strong>📅</strong> Domenica 27 luglio 2026</div>
+            <div class="info-item"><strong>🕓</strong> Apertura ore 16:30</div>
+            <div class="info-item"><strong>📍</strong> Parrocchia San Giovanni Bosco</div>
+            <div class="info-item"><strong>🗺</strong> Via Tenente Cataldo n° 34, Caltagirone</div>
+        </div>
+    </header>
+
+    <!-- MAIN NAVIGATION BOXES -->
+    <a href="sport.html" class="main-box main-box-sport" aria-label="Vai alla sezione Sport">
+        <div class="main-box-content">
+            <div class="main-box-icon">🏐 🏓</div>
+            <div class="main-box-title">Sport</div>
+            <div class="main-box-sub">Pallavolo · Ping Pong — Iscrizioni aperte</div>
+        </div>
+        <div class="main-box-arrow" aria-hidden="true">→</div>
+    </a>
+
+    <a href="giochi.html" class="main-box main-box-giochi" aria-label="Vai alla sezione Giochi da tavolo">
+        <div class="main-box-content">
+            <div class="main-box-icon">🃏 ♟️</div>
+            <div class="main-box-title">Giochi</div>
+            <div class="main-box-sub">Burraco · Scacchi · Tana del Goblin</div>
+        </div>
+        <div class="main-box-arrow" aria-hidden="true">→</div>
+    </a>
+
+    <!-- PROGRAMMA -->
+    <p class="section-label">Programma</p>
+    <div class="timeline-wrap" role="list" aria-label="Programma della giornata">
+
+        <div class="tl-item" role="listitem">
+            <div class="tl-time">16:30</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">Apertura porte</div>
+        </div>
+
+        <!-- KaltaStreetEagles — evidenziati -->
+        <div class="tl-item-featured" role="listitem">
+            <div class="tl-time">17:00</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">
+                <span class="badge-live" aria-label="Performance dal vivo">LIVE</span>
+                <strong>KaltaStreetEagles</strong> — Esibizione
+            </div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+            <div class="tl-time">17:30</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">Inizio tornei — Pallavolo e Ping Pong</div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+            <div class="tl-time">Pomeriggio</div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content"><strong>Jam Session</strong> live — fino all'inizio del DJ set</div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+            <div class="tl-time"><span class="badge-tbd-plain">TBD</span></div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">Torneo Burraco</div>
+        </div>
+
+        <div class="tl-item" role="listitem">
+            <div class="tl-time"><span class="badge-tbd-plain">TBD</span></div>
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content"><strong>DJ Set</strong> — Alessandro Vascan</div>
+        </div>
+
+    </div>
+
+    <!-- CIBO -->
+    <p class="section-label">Cibo &amp; Serata</p>
+    <div class="cibo-card">
+        <h2>🍔 Banchetto &amp; Cena</h2>
+        <div class="cibo-row">
+            <span class="cibo-row-icon">☀️</span>
+            <span><strong>Pomeriggio:</strong> Banchetto snack dolci e salati — offerta libera.</span>
+        </div>
+        <div class="cibo-row">
+            <span class="cibo-row-icon">🌙</span>
+            <span><strong>Sera:</strong> Panino (opzione vegana disponibile). <span class="badge-tbd-inv">Prezzo TBD</span></span>
+        </div>
+        <!--
+            TODO: rimuovi disabled quando il link form è pronto.
+            Cambia in: <a href="LINK_FORM" class="btn btn-yellow" target="_blank" rel="noopener">Prenota cena</a>
+        -->
+        <button class="btn btn-yellow btn-disabled" disabled aria-disabled="true" style="margin-top:14px;">
+            Prenota cena — link in arrivo
+        </button>
+    </div>
+
+    <!-- SPONSOR -->
+    <div class="sponsor-trigger"
+         role="button" tabindex="0" aria-haspopup="dialog"
+         onclick="openSponsorModal()"
+         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openSponsorModal();}">
+        🎁 Clicca qui per vedere i nostri sponsor!
+    </div>
+
+    <!-- FOOTER ORGANIZZATORI -->
+    <footer>
+        <h3>Organizzatori</h3>
+        <div class="org-grid">
+            <!-- Summer Mix logo già disponibile -->
+            <div class="org-slot">
+                <img src="logo.png" alt="Summer Mix">
+            </div>
+            <!-- TODO: sostituire i 3 placeholder con loghi reali -->
+            <div class="org-slot">Clan Lux Viae<br>Logo</div>
+            <div class="org-slot">AGESCI<br>Caltagirone 1<br>Logo</div>
+            <div class="org-slot">Parrocchia S. G. Bosco<br>Logo</div>
+        </div>
+        <p class="contact-line">
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/393515099889" class="contact-link">+39 351 509 9889</a>
+        </p>
+        <a href="https://www.instagram.com/grupposcout_caltagirone1"
+           class="social-link" target="_blank" rel="noopener">
+            📸 @grupposcout_caltagirone1
+        </a>
+        <p class="footer-note">AGESCI Caltagirone 1 – Clan Lux Viae</p>
+    </footer>
+
+</div><!-- /container -->
+
+<!-- SPONSOR MODAL -->
+<div id="sponsorModal" class="modal-overlay"
+     role="dialog" aria-modal="true" aria-labelledby="sponsorTitle"
+     onclick="closeSponsorModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close-modal" role="button" tabindex="0" aria-label="Chiudi"
+              onclick="closeSponsorModal()"
+              onkeydown="if(event.key==='Enter'||event.key===' '){closeSponsorModal();}">&times;</span>
+        <h2 id="sponsorTitle">I Nostri Sponsor</h2>
+        <div class="sponsor-grid">
+            <div class="sponsor-slot">Sponsor 1</div>
+            <div class="sponsor-slot">Sponsor 2</div>
+            <div class="sponsor-slot">Sponsor 3</div>
+            <div class="sponsor-slot">Sponsor 4</div>
+            <div class="sponsor-slot">Sponsor 5</div>
+            <div class="sponsor-slot">Sponsor 6</div>
+            <div class="sponsor-slot">Sponsor 7</div>
+            <div class="sponsor-slot">Sponsor 8</div>
+        </div>
+    </div>
+</div>
+
+<script src="particles.js"></script>
+<script>
+function openSponsorModal() {
+    const m = document.getElementById('sponsorModal');
+    m.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    m.querySelector('.close-modal').focus();
+}
+function closeSponsorModal() {
+    document.getElementById('sponsorModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSponsorModal(); });
+</script>
+
+</body>
+</html>
