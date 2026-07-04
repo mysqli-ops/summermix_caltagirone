@@ -280,10 +280,16 @@ footer {
 footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14px; }
 
 .org-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 10px; margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
 }
-.org-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.org-slot {
+    flex: 0 0 calc(33.333% - 8px);
+    min-width: 0;
+}
 .org-slot {
     border: 2px dashed #e2e8f0; border-radius: 8px;
     padding: 14px 10px; height: 76px;
