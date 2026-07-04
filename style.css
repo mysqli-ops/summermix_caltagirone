@@ -371,6 +371,22 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     object-fit: contain; display: block;
 }
 
+/* sub-card-foot con logo associazione a sx e bottone a dx */
+.sub-card-foot-flex {
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 12px;
+}
+.sub-card-foot-flex .btn {
+    width: auto; white-space: nowrap; flex-shrink: 0;
+}
+.assoc-logos {
+    display: flex; gap: 6px; align-items: center; flex-shrink: 0;
+}
+.assoc-logo {
+    height: 40px; width: auto; max-width: 68px;
+    object-fit: contain; border-radius: 4px; display: block;
+}
+
 /* ── Responsive ── */
 @media (max-width: 380px) {
     .sub-card-body  { flex-direction: column; }
