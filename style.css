@@ -262,7 +262,7 @@ header { text-align: center; padding: 30px 0 20px; }
 .on-light .illus-slot.ph { background: rgba(255,255,255,.55); border: 1px dashed rgba(29,38,79,.22); color: rgba(29,38,79,.6); }
 .on-dark  .illus-slot.ph { background: rgba(255,255,255,.14); border: 1px dashed rgba(255,255,255,.38); color: rgba(255,255,255,.8); }
 .illus-slot.ph svg { opacity: .5; }
-.illus-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.illus-slot img { width: 100%; height: auto; object-fit: contain; display: block; }
 
 /* ── Details list ── */
 .details-list { list-style: none; margin: 8px 0; }
@@ -386,6 +386,11 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     height: 40px; width: auto; max-width: 68px;
     object-fit: contain; border-radius: 4px; display: block;
 }
+
+/* timeline con illustrazione laterale */
+.tl-with-img  { display: flex; gap: 12px; align-items: center; }
+.tl-items     { flex: 1; min-width: 0; }
+.tl-side-img  { width: 32%; flex-shrink: 0; height: auto; display: block; border-radius: 8px; }
 
 /* ── Responsive ── */
 @media (max-width: 380px) {
