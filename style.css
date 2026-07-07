@@ -392,6 +392,37 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
 .tl-items     { flex: 1; min-width: 0; }
 .tl-side-img  { width: 32%; flex-shrink: 0; height: auto; display: block; border-radius: 8px; }
 
+/* menu cena dropdown (dentro cibo-card, on-dark) */
+.menu-dropdown {
+    margin-top: 12px;
+    background: rgba(255,255,255,.12);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.menu-dropdown summary {
+    cursor: pointer; padding: 11px 14px;
+    font-family: 'Montserrat', sans-serif; font-weight: 700;
+    font-size: .9rem; list-style: none;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.menu-dropdown summary::-webkit-details-marker { display: none; }
+.menu-dropdown summary::after {
+    content: "+"; font-size: 1.3rem; font-weight: 700;
+    transition: transform .2s;
+}
+.menu-dropdown[open] summary::after { transform: rotate(45deg); }
+.menu-list { list-style: none; padding: 4px 14px 14px; margin: 0; }
+.menu-list li {
+    font-size: .86rem; padding: 6px 0;
+    border-top: 1px solid rgba(255,255,255,.15);
+    display: flex; gap: 10px; align-items: baseline;
+}
+.menu-list li:first-child { border-top: none; }
+.menu-price {
+    font-family: 'Montserrat', sans-serif; font-weight: 700;
+    flex-shrink: 0; min-width: 48px;
+}
+
 /* ── Responsive ── */
 @media (max-width: 380px) {
     .sub-card-body  { flex-direction: column; }
