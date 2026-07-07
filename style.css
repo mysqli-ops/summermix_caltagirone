@@ -2,6 +2,7 @@
    SUMMER MIX 2026 — Shared Stylesheet
    ============================================================ */
 :root {
+    color-scheme: light only;
     --color-pink:        #FFA7D7;
     --color-pink-dark:   #D985B4;
     --color-green:       #3BB789;
@@ -13,6 +14,7 @@
     --color-navy:        #1D264F;
     --color-navy-dark:   #141A38;
     --color-text-dark:   #1D264F;
+    --color-bg:          #FCE8D6;
 }
 
 *, *::before, *::after {
@@ -20,14 +22,18 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+html { background: var(--color-bg); }
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: var(--color-bg);
     color: var(--color-text-dark);
     line-height: 1.6;
     padding-bottom: 60px;
     min-height: 100vh;
     overflow-x: hidden;
+    -webkit-text-fill-color: initial; /* previene override forzati iOS dark */
+    forced-color-adjust: none;
 }
 
 h1, h2, h3 {
@@ -83,9 +89,15 @@ header { text-align: center; padding: 30px 0 20px; }
 
 /* ── Section label ── */
 .section-label {
-    font-family: 'Montserrat', sans-serif; font-size: .68rem;
-    font-weight: 800; text-transform: uppercase; letter-spacing: 2.5px;
-    color: #bbb; margin: 22px 0 10px; text-align: center;
+    font-family: 'Montserrat', sans-serif; font-size: .95rem;
+    font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--color-navy); margin: 28px 0 14px; text-align: center;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.section-label::before,
+.section-label::after {
+    content: ""; height: 3px; flex: 1; max-width: 60px;
+    background: var(--color-red); border-radius: 2px;
 }
 
 /* ── Main nav boxes (index only) ── */
@@ -251,8 +263,9 @@ header { text-align: center; padding: 30px 0 20px; }
 
 /* ── Illustration slot ── */
 .illus-slot {
-    flex: 0 0 calc(33% - 7px); border-radius: 8px; overflow: hidden;
-    min-height: 120px; display: flex; align-items: center; justify-content: center;
+    flex: 0 0 calc(25% - 8px); border-radius: 8px; overflow: hidden;
+    min-height: 90px; align-self: center;
+    display: flex; align-items: center; justify-content: center;
 }
 .illus-slot.ph {          /* placeholder */
     flex-direction: column; gap: 5px; padding: 8px; text-align: center;
@@ -387,11 +400,6 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     object-fit: contain; border-radius: 4px; display: block;
 }
 
-/* timeline con illustrazione laterale */
-.tl-with-img  { display: flex; gap: 12px; align-items: center; }
-.tl-items     { flex: 1; min-width: 0; }
-.tl-side-img  { width: 32%; flex-shrink: 0; height: auto; display: block; border-radius: 8px; }
-
 /* menu cena dropdown (dentro cibo-card, on-dark) */
 .menu-dropdown {
     margin-top: 12px;
@@ -422,6 +430,13 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     font-family: 'Montserrat', sans-serif; font-weight: 700;
     flex-shrink: 0; min-width: 48px;
 }
+
+html { scroll-behavior: smooth; }
+
+/* org-slot cliccabile (link Instagram) */
+a.org-slot { cursor: pointer; transition: transform .15s, border-color .15s; text-decoration: none; }
+a.org-slot:hover { transform: translateY(-2px); border-color: var(--color-pink-dark); }
+a.org-slot:focus-visible { outline: 3px solid var(--color-navy); outline-offset: 2px; }
 
 /* ── Responsive ── */
 @media (max-width: 380px) {
