@@ -400,6 +400,26 @@ footer h3 { font-size: 1.05rem; color: var(--color-text-dark); margin-bottom: 14
     object-fit: contain; border-radius: 4px; display: block;
 }
 
+/* ── Attività libere (index) ── */
+.free-card {
+    background: var(--color-green); color: #fff;
+    border-radius: 12px; padding: 18px 18px 20px;
+    box-shadow: 0 8px 0 var(--color-green-dark), 0 14px 20px rgba(0,0,0,.10);
+    margin-bottom: 14px;
+}
+.free-card h2 { font-size: 1.2rem; margin-bottom: 12px; }
+.free-block { margin-bottom: 10px; font-size: .9rem; }
+.free-block:last-of-type { margin-bottom: 0; }
+.free-illus {
+    display: flex; gap: 12px; justify-content: center;
+    margin-top: 14px;
+}
+.free-illus img {
+    width: 38%; max-width: 150px; height: auto;
+    object-fit: contain; display: block;
+    border-radius: 8px;
+}
+
 /* menu cena dropdown (dentro cibo-card, on-dark) */
 .menu-dropdown {
     margin-top: 12px;
